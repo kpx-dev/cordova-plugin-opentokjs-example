@@ -1,2 +1,47 @@
 # cordova-plugin-opentokjs-example
-Example Ionic application to test the cordova-plugin-opentokjs plugin
+This is an example application which shows the use of the `cordova-plugin-opentokjs` plugin for
+Cordova with the use of the standard Ionic tabs starter project.
+
+## Setup
+
+You will need an OpenTok API Key, Session ID, and Token. If you do not already have these, you can
+get these values from the [TokBox Dashboard](https://dashboard.tokbox.com).
+
+1. Clone the repository.
+
+2. Download NPM dependencies `npm install`.
+
+3. Download Bower dependencies `bower install`.
+
+4. Rename the `www/js/config.js.sample` file to `www/js/config.js`.
+
+5. Insert your own values for your OpenTok API Key, Session ID, and a Token into `www/js/config.js`.
+
+**NOTE:** Running `ionic serve` does not include the necessary `opentok.js` from the plugin. Therefore this command doesn't work to test the application. Use `ionic run browser` instead (see below).
+
+## Running the application on a specific platform
+
+Before you are able to build for a specific platform, you need to add this platform to your project:
+
+* `ionic platform add android`
+
+* `ionic platform add ios` -> **Note**: Adding platform IOS can only be performed on a Mac OSX
+
+* `ionic platform add browser` -> **Note**: Still in BETA
+
+After adding the correct platform(s), you can run the application using the Ionic CLI. Examples:
+
+*  `ionic emulate android` -> Runs project within Android emulator. Only recommended for AVDs
+   created with x86 emulation (Intel HAXM). Also, be aware that most AVDs are setup with virtualized
+   camera's and microphones by default. This can be configured when creating a new AVD.
+
+*  `ionic run android --device` -> Runs project on an Android device.
+
+*  `ionic run browser` -> Runs project in a new browser instance. For Linux we made an adjustment to the file `./platforms/browser/cordova/run` to be able to start Chrome with the necessary flags. These adjustments can be found on [this Gist](https://gist.github.com/mark-veenstra/7b3be1eee573c73f5526). Also note that all plugins should have the browser as platform before this command to work.
+
+*  `ionic run ios --device` -> Runs project on an iOS device. Make sure you have `ios-deploy`
+   installed.
+
+*  `ionic run ios --simulator` -> Runs project on the iOS Simulator. Make sure you have `ios-sim`
+   installed. Also, be aware that the iOS Simulator does not have access to your machine's camera
+   or microphone.

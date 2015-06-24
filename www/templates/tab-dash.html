@@ -1,0 +1,14 @@
+<ion-view view-title="Dashboard">
+    <ion-content class="padding">
+        <ul class="list">
+
+            <li class="item item-checkbox" ng-repeat="todo in todos">
+                <label class="checkbox">
+                    <input type="checkbox" checked>
+                </label>
+                {{ todo.title }}
+            </li>
+
+        </ul>
+    </ion-content>
+</ion-view>

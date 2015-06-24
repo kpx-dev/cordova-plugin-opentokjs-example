@@ -1,0 +1,12 @@
+.idea/
+plugins/
+www/lib/
+platforms/
+node_modules/
+/nbproject/private/
+**/Thumbs.db
+**/*.log
+**/*.zip
+resources/android/
+resources/ios/
+www/js/app.constant.js

@@ -1,0 +1,9 @@
+/**
+ * Copy this sample file to ./www/js/app.constant.js and change the settings.
+ * Get the API key, sessionId and token from TokBox Dashboard
+ */
+angular.module('starter').constant('TokBoxSettings', {
+    'apiKey': '',
+    'sessionId': '',
+    'token': ''
+});
