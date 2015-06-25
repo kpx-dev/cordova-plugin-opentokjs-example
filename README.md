@@ -13,9 +13,9 @@ get these values from the [TokBox Dashboard](https://dashboard.tokbox.com).
 
 3. Download Bower dependencies `bower install`.
 
-4. Rename the `www/js/config.js.sample` file to `www/js/config.js`.
+4. Rename the `www/js/app.constant.js.sample` file to `www/js/app.constant.js`.
 
-5. Insert your own values for your OpenTok API Key, Session ID, and a Token into `www/js/config.js`.
+5. Insert your own values for your OpenTok API Key, Session ID, and a Token into `www/js/app.constant.js`.
 
 **NOTE:** Running `ionic serve` does not include the necessary `opentok.js` from the plugin. Therefore this command doesn't work to test the application. Use `ionic run browser` instead (see below).
 
@@ -45,3 +45,25 @@ After adding the correct platform(s), you can run the application using the Ioni
 *  `ionic run ios --simulator` -> Runs project on the iOS Simulator. Make sure you have `ios-sim`
    installed. Also, be aware that the iOS Simulator does not have access to your machine's camera
    or microphone.
+
+## Known Issues
+
+Please note the following known issues:
+
+* [cordova-plugin-iosrtc](https://github.com/eface2face/cordova-plugin-iosrtc#known-issues)
+
+* [cordova-plugin-opentokjs](https://github.com/aoberoi/cordova-plugin-opentokjs#known-limitations)
+
+## Author
+
+[Mark Veenstra](https://github.com/mark-veenstra) at [Mobilea BV](http://www.mobilea.nl)
+[Paul Wijnberg](https://github.com/Paulsky) at [Mobilea BV](http://www.mobilea.nl)
+
+## Special thanks
+
+[Ankur Oberoi](https://github.com/aoberoi) at [TokBox Inc](https://tokbox.com/)
+[Adam Ullman](https://github.com/aullman) at [TokBox Inc](https://tokbox.com/)
+
+## License
+
+[MIT](./LICENSE) :)
