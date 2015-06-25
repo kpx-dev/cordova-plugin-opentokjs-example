@@ -56,13 +56,15 @@ Please note the following known issues:
 
 ## Author
 
-[Mark Veenstra](https://github.com/mark-veenstra) at [Mobilea BV](http://www.mobilea.nl)
-[Paul Wijnberg](https://github.com/Paulsky) at [Mobilea BV](http://www.mobilea.nl)
+* [Mark Veenstra](https://github.com/mark-veenstra) at [Mobilea BV](http://www.mobilea.nl)
+
+* [Paul Wijnberg](https://github.com/Paulsky) at [Mobilea BV](http://www.mobilea.nl)
 
 ## Special thanks
 
-[Ankur Oberoi](https://github.com/aoberoi) at [TokBox Inc](https://tokbox.com/)
-[Adam Ullman](https://github.com/aullman) at [TokBox Inc](https://tokbox.com/)
+* [Ankur Oberoi](https://github.com/aoberoi) at [TokBox Inc](https://tokbox.com/)
+
+* [Adam Ullman](https://github.com/aullman) at [TokBox Inc](https://tokbox.com/)
 
 ## License
 
