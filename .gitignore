@@ -10,3 +10,4 @@ node_modules/
 resources/android/
 resources/ios/
 www/js/app.constant.js
+bower_components/
