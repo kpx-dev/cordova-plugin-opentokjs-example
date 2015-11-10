@@ -17,7 +17,7 @@ get these values from the [TokBox Dashboard](https://dashboard.tokbox.com).
 
 5. Insert your own values for your OpenTok API Key, Session ID, and a Token into `www/js/app.constant.js`.
 
-**NOTE:** Running `ionic serve` does not include the necessary `opentok.js` from the plugin. Therefore this command doesn't work to test the application. Use `ionic run browser` instead (see below).
+**NOTE:** Running `ionic serve` does not include the necessary `opentok.js` from the plugin. Therefore this command doesn't work to test the application. Use `ionic build browser` and `gulp browser:serve` instead.
 
 ## Running the application on a specific platform
 
