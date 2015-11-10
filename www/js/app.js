@@ -25,6 +25,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
                     cordova.plugins.iosrtc.debug.enable('iosrtc*');
                     cordova.plugins.iosrtc.registerGlobals();
                     window.OT = cordova.require('cordova-plugin-opentokjs.OpenTokClient');
+                    alert('We registered cordova-plugin-iosrtc globals!');
                 }
             }
         });
