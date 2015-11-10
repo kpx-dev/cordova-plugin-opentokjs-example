@@ -14,8 +14,7 @@
     "gulp-webserver": "^0.9.1",
     "xcode": "*"
   },
-  "devDependencies": {
-  },
+  "devDependencies": {},
   "cordovaPlugins": [
     "cordova-plugin-device",
     "cordova-plugin-console",
@@ -24,10 +23,8 @@
     "cordova-plugin-opentokjs"
   ],
   "cordovaPlatforms": [
-    {
-      "platform": "android",
-      "locator": "browser"
-    },
-    "android"
+    "android",
+    "browser",
+    "ios"
   ]
 }
