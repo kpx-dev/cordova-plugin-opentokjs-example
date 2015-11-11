@@ -24,11 +24,13 @@ angular.module('starter.controllers', [])
         },
 
         onSessionConnected: function(event) {
+            console.log('onSessionConnected: ', event);
             opentok.session.publish(opentok.publisher);
         },
 
         onStreamCreated: function(event) {
             if (!opentok.isSubscribing) {
+                console.log('onStreamCreated: ', event);
                 opentok.subscriber = opentok.session.subscribe(event.stream, 'subscriber');
                 opentok.isSubscribing = true;
             }
@@ -36,6 +38,7 @@ angular.module('starter.controllers', [])
 
         onStreamDestroyed: function(event) {
             if (opentok.isSubscribing && event.stream.streamId === opentok.subscriber.stream.streamId) {
+                console.log('onStreamDestroyed: ', event);
                 opentok.session.unsubscribe(opentok.subscriber);
                 opentok.isSubscribing = false;
                 opentok.subscriber = undefined;
