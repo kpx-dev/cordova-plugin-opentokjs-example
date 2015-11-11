@@ -37,7 +37,7 @@ After adding the correct platform(s), you can run the application using the Ioni
 
 *  `ionic run android --device` -> Runs project on an Android device.
 
-*  `ionic run browser` -> Runs project in a new browser instance. For Linux we made an adjustment to the file `./platforms/browser/cordova/run` to be able to start Chrome with the necessary flags. These adjustments can be found on [this Gist](https://gist.github.com/mark-veenstra/7b3be1eee573c73f5526). Also note that all plugins should have the browser as platform before this command to work.
+*  `ionic build browser` -> Builds project for a browser and loads all cordova plugins. To be able to serve the browser build, run `gulp browser:serve`. Note that the `gulp browser:serve` has live-reload. When you change anything on the project just re-run `ionic build browser` and you are good to go.
 
 *  `ionic run ios --device` -> Runs project on an iOS device. Make sure you have `ios-deploy`
    installed.
@@ -57,8 +57,6 @@ Please note the following known issues:
 ## Author
 
 * [Mark Veenstra](https://github.com/mark-veenstra) at [Mobilea BV](http://www.mobilea.nl)
-
-* [Paul Wijnberg](https://github.com/Paulsky) at [Mobilea BV](http://www.mobilea.nl)
 
 ## Special thanks
 
