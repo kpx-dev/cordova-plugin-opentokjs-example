@@ -20,8 +20,8 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
             }
 
             // Just for iOS devices.
-            if(window.cordova) {
-                if (window.device.platform === 'iOS') {
+            if(device.cordova) {
+                if (device.platform === 'iOS') {
                     cordova.plugins.iosrtc.debug.enable('iosrtc*');
                     cordova.plugins.iosrtc.registerGlobals();
                     window.OT = cordova.require('cordova-plugin-opentokjs.OpenTokClient');
