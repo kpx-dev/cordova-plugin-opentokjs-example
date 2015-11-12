@@ -20,13 +20,11 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
             }
 
             // Just for iOS devices.
-            if(device.cordova) {
-                if (device.platform === 'iOS') {
-                    cordova.plugins.iosrtc.debug.enable('iosrtc*');
-                    cordova.plugins.iosrtc.registerGlobals();
-                    window.OT = cordova.require('cordova-plugin-opentokjs.OpenTokClient');
-                    alert('We registered cordova-plugin-iosrtc globals!');
-                }
+            if (ionic.Platform.isIOS()) {
+                cordova.plugins.iosrtc.debug.enable('iosrtc*');
+                cordova.plugins.iosrtc.registerGlobals();
+                window.OT = cordova.require('cordova-plugin-opentokjs.OpenTokClient');
+                alert('We registered cordova-plugin-iosrtc globals!');
             }
         });
     })
