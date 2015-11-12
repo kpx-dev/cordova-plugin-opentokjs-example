@@ -13,9 +13,11 @@ get these values from the [TokBox Dashboard](https://dashboard.tokbox.com).
 
 3. Download Bower dependencies `bower install`.
 
-4. Rename the `www/js/app.constant.js.sample` file to `www/js/app.constant.js`.
+4. Install the plugin: cordova plugin add cordova-plugin-opentokjs --save --shrinkwrap
 
-5. Insert your own values for your OpenTok API Key, Session ID, and a Token into `www/js/app.constant.js`.
+5. Rename the `www/js/app.constant.js.sample` file to `www/js/app.constant.js`.
+
+6. Insert your own values for your OpenTok API Key, Session ID, and a Token into `www/js/app.constant.js`.
 
 **NOTE:** Running `ionic serve` does not include the necessary `opentok.js` from the plugin. Therefore this command doesn't work to test the application. Use `ionic build browser` and `gulp browser:serve` instead.
 
